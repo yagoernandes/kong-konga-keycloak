@@ -100,3 +100,9 @@ services:
       KEYCLOAK_ADMIN:     admin
       KEYCLOAK_ADMIN_PASSWORD: admin
 
+  savewalter:
+    image: yagoernandes/savewalterwhite
+    ports:
+      - 80:80
+    networks:
+      - kong-net
